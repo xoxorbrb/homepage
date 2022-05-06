@@ -1,0 +1,113 @@
+:root {
+    --text-color: #1a132f;
+    --background-color: #fbf8f1;
+    --logo-color: brown;
+    --btn-color: #61a4bc;
+    --hoverbtn-color: #5b7db1;
+    --hovertext-color: #f7e2e2;
+}
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+#Logo a{
+    text-decoration: none;
+}
+#Logo {
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+}
+#Logo h1 {
+    font-size: 24px;
+    margin-left: 8px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--text-color);
+}
+#Logo i {
+    color: var(--logo-color);
+}
+#MemberJoin_Box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#MemberJoin_Box h2 {
+    color: var(--text-color);
+}
+
+#MemberJoin_Box li {
+    display:flex;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 19px 0px 8px;
+    font-weight: bold;
+}
+#years, #month, #day {
+    height: 30px;
+}
+.numID {
+    width: 156px;
+    height: 29px;
+    font-size: 20px;
+    margin-top: 3px;
+    border: 0.5px solid #bdbcbe;
+    border-radius: 4px;
+}
+#other {
+    display: none;
+    width: 151px;
+}
+#mailinput {
+    width: 120px;
+    height: 29px;
+    font-size: 20px;
+    margin-top: 3px;
+    border: 0.5px solid #bdbcbe;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+#mailaddress {
+    width: 120px;
+    height: 29px;
+    font-size: 20px;
+    border: 0.5px solid #bdbcbe;
+    border-radius: 4px;
+}
+.input_Box {
+    display: block;
+    width: 452px;
+    height: 41px;
+    border: 1px solid gray;
+    padding: 8px 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.fa-envelope, .fa-envelope-circle-check, .fa-image-portrait, .fa-calendar{
+    font-size: 20px;
+}
+.fa-envelope-circle-check{
+    display:none;
+}
+#site {
+    height: 30px;
+    padding: 8px 5px;
+    font-size: 12px;
+}
+#Joinbtn {
+    width: 464px;
+    height: 63px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--text-color);
+    color: var(--btn-color);
+}
+#Joinbtn:hover {
+    background-color: var(--hoverbtn-color);
+    color: var(--hovertext-color);
+    transition: all ease 2s 0s;
+}

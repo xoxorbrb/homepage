@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d99a4f7016.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/MemberJoin.css">
+    <title>회원가입</title>
+</head>
+<body>
+    <div id = "Logo">
+        <i class="fa-solid fa-display"></i>
+        <a href=""><h1>XoXorbrb</h1></a>
+    </div>
+    <div id = "MemberJoin_Box">
+        <h2>회원가입</h2>
+            <form id = "memberform" action = "../memberinfo" method = "post">
+                <ul id = "inpo_input">
+                    <li>이름 입력</li>
+                        <span class = "input_Box">
+                            <input type="text" name = "name" id = "userName" >
+                            <i id="nEmo" class="fa-solid fa-input-text">name</i>
+                        </span>
+                    <li>아이디 입력</li>
+                        <span class = "input_Box">
+                            <input type="text" name = "id" id = "userID">
+                            <i id="idEmo" class="fa-solid fa-id-card"></i>
+                        </span>
+                    <li>패스워드 입력</li>
+                        <span class = "input_Box">
+                            <input type="password" name = "password" id = "Pw">
+                            <i id= "pwEmo1"class="fa-solid fa-fingerprint"></i>
+                        </span>
+                    <li>패스워드 확인</li>
+                        <span class = "input_Box">
+                            <input type="password" name = "pwcheck" id = "pwCheck">
+                            <i id = "pwEmo2" class="fa-solid fa-check-double"></i>
+                        </span>
+                    <li>닉네임 입력</li>
+                        <span class="input_Box">
+                            <input type="text" name = "nickname" id = "Nname">
+                            <i id = "nicEmo" class="fa-solid fa-person"></i>
+                        </span>
+                    <li>캡차 (추가예정)</li>
+                </ul>
+            </form>
+
+        <input id = "Joinbtn" type="submit" value = "다음" onclick = "AllCheck()">
+
+        
+    </div>
+</body>
+
+<script src = "../js/MemberJoinPage.js" defer></script>
+</html>

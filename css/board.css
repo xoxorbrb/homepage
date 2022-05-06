@@ -1,0 +1,66 @@
+:root {
+  --border-color: #1a132f;
+  --btn-color: honeydew;
+  --text-color: #f7e2e2;
+  --board-color: #eceeee;
+}
+
+#container {
+  width: 100vh;
+  height: 100vh;
+}
+#board_Box {
+  position: relative;
+  top: 150px;
+  left: 550px;
+  width: 809px;
+  height: 500px;
+  border: 1px solid #1a132f;
+  background-color: var(--board-color);
+}
+
+h1 {
+  position: relative;
+  top: 150px;
+  left: 550px;
+}
+#little_Box {
+  display: flex;
+  padding: 27px;
+  flex-direction: column;
+  font-weight: bold;
+}
+#little_Box input {
+  margin-bottom: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+.text_box {
+  margin-bottom: 5px;
+  color: var(--border-color);
+}
+#title_input {
+  width: 520px;
+  height: 24px;
+}
+
+#story {
+  height: 320px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+#container button {
+  position: relative;
+  top: 170px;
+  left: 1195px;
+  width: 80px;
+  height: 30px;
+  background-color: var(--btn-color);
+  border-radius: 4px;
+}
+
+#container button:hover {
+  background-color: var(--border-color);
+  color: var(--text-color);
+}

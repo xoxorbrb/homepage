@@ -1,0 +1,73 @@
+:root {
+  --Logo-color: #f7e2e2;
+  --LogBox-border-color: #1a132f;
+  --LogBox-background-color: #5b7db1;
+}
+body {
+  width: auto;
+  height: 100vh;
+  background-image: url("../backgroundIMG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+#Logo {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  color: var(--Logo-color);
+  margin-top: 50px;
+}
+#ID_form {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 75px;
+}
+
+#Log_Box {
+  display: flex;
+  border: 2px solid var(--LogBox-border-color);
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--LogBox-background-color);
+}
+#id_pass {
+  list-style-type: none;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#id_pass li {
+  display: flex;
+  margin-top: 10px;
+}
+#id_pass li span {
+  align-items: flex-start;
+  width: 25px;
+}
+
+#login_btn {
+  list-style: none;
+}
+#login_btn a button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+#find_btn {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  justify-content: left;
+}
+
+#find_btn a {
+  text-decoration: none;
+  color: black;
+  margin-left: 25px;
+  margin-right: 15px;
+}

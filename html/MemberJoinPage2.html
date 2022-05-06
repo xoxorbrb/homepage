@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d99a4f7016.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/MemberJoin2.css">
+    <title>회원가입</title>
+    <script>
+        //이모티콘 파란색으로 변환
+        function trueVarStyle(Ele) {
+            Ele.style.color = "blue";
+            Ele.style.transition = "all ease 1s 0s";
+            return true;
+        }
+        //이모티콘 붉은색으로 변환
+        function falseVarStyle(Ele) {
+            Ele.style.color = "red";
+            Ele.style.transition = "all ease 1s 0s";
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div id = "Logo">
+        <i class="fa-solid fa-display"></i>
+        <a href=""><h1>XoXorbrb</h1></a>
+    </div>
+    <div id="MemberJoin_Box">
+        <h2>회원가입</h2>
+        <form action="../memberinfo2" id="123" method = "post">
+            <li class = "index">생년월일</li>
+                <div id="birthday">
+                    <select name="years" id = "years">
+                        <script>
+                            for(i=2022; i>1900; i--){
+                                document.write("<option>" + [i] + "</option>");
+                            }
+                        </script>
+                    </select>
+                    <select name="month" id = "month">
+                        <script>
+                            for(i=1; i<13; i++) {
+                                document.write("<option>" + [i] + "</option>");
+                            }
+                        </script>
+                    </select>
+                    <select name="day" id="day">
+                        <script>
+                            var month = document.getElementById('month');
+                            if(month == 1,3,5,7,8,10,12 ) {
+                                for(i=1; i<32; i++) {
+                                    document.write("<option>" + [i] + "</option>");
+                                }
+                            }
+                            else if(month == 2) {
+                                for(i=1; i<30; i++) {
+                                    document.write("<option>" + [i] + "</option>");
+                                }
+                            }
+                            else {
+                                for(i=1; i<31; i++){
+                                    document.write("<option>" + [i] + "</option>");
+                                }
+                            }
+                        </script>
+                    </select>
+                    <i id = "birthdayEmo" class="fa-solid fa-calendar"></i>                    
+                </div>
+            <li class = "index">주민등록번호</li>
+                <span class = "input_Box">
+                    <input type="text" name="" id = "num1" class="numID">
+                    <i class="fa-solid fa-hyphen">-</i>
+                    <input type="password" name="" id = "num2" class="numID">
+                    <i id = "idEmo" class="fa-solid fa-image-portrait"></i>
+                </span>
+            <li class = "index">취미</li>
+                <div id="check">
+                    <input type="checkbox" name="hobby" value="컴퓨터">컴퓨터
+                    <input type="checkbox" name="hobby" value="노래" >노래
+                    <input type="checkbox" name="hobby" value="산책" >산책
+                    <input type="checkbox" name="hobby" value="등산" >등산
+                    <input id = "othercheck" type="checkbox" name="other" value="기타">기타
+                    <input id = "other" type="text" name="내용" >
+                    <script>
+                        othercheck.addEventListener('change', function() {
+                            if(othercheck.checked) {
+                                other.style.display = "inline";
+                            }
+                            else {
+                                other.style.display = "none";
+                            }
+                        });
+                    </script>
+                </div>
+            
+            <li class = "index">메일주소</li>
+            <span class = "input_Box">
+                <input type="text" name="" id="mailinput">@
+                <input type="text" name="" id="mailaddress" >
+                <select name="address" id="site">
+                    <option value="직접입력">직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="gmail.com">gmail.com</option>
+                </select>
+                <i id = "mailEmo" class="fa-solid fa-envelope"></i>
+                <i id = "checkmailEmo" class="fa-solid fa-envelope-circle-check"></i>
+            </span>
+        </span>
+        </form>
+        <input id ="Joinbtn" type="submit" value="다음" onclick = "checkAll()">
+    </div>
+</body>
+<script src = "../js/MemberJoinPage2.js" ></script>
+</html>
