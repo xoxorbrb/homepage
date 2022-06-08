@@ -1,2 +1,2 @@
 # Homepage
-홈페이지 공부
+기초 front (CSS, JS, HTML)
